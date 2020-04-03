@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="snake" class="container">
+        <h1>{{title}}</h1>
+
+        <div id="overlay">
+            Your final score: <span>{{score}}</span>
+            <br>
+            <a @click="startGame" href="#">Click to play again</a>
+        </div>
+        <canvas id="myCanvas" width="600" height="400">
+            <p>Sorry your browser dosn´t support canvas feature.</p>
+        </canvas>
+        <div id="stats">
+            <div id="score" class="score"></div>
+            <div id="high_score" class="score"></div>
+            <button @click="resetScore" id="reset_score">Reset Score</button>
+        </div>
+        <div id="stats">
+            <div id="food" class="score"></div>
+            <div id="snake" class="score"></div>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="snake.js"></script>
+</body>
+</html>
