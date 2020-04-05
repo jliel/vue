@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    <script>
+        function fizz_buzz () {
+            let mostrar = document.getElementById("list");
+            let numbers = "";
+            for (let i = 1; i<=100; i++) {
+                (i%3===0 && i%5===0) ? console.log("Fizz Buzz") : 
+                (i%3===0) ? console.log("Fizz") : 
+                (i%5===0) ? console.log("Buzz") : console.log(i);
+                numbers += (i + " ");
+            } 
+        }
+        fizz_buzz();
+    </script>
+</body>
+</html>
